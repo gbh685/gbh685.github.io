@@ -1,0 +1,87 @@
+/* styles.css */
+
+/* General styles */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.dark-mode {
+    background-color: #121212 !important;
+    color: #f8f9fa !important;
+}
+
+.navbar, .card {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .navbar, .dark-mode .card {
+    background-color: #1f1f1f !important;
+    color: #f8f9fa !important;
+}
+
+/* Quill editor */
+.ql-editor {
+    min-height: 150px;
+}
+
+.ql-toolbar {
+    background-color: #f1f1f1;
+}
+
+.dark-mode .ql-toolbar {
+    background-color: #333333;
+    color: #f8f9fa;
+}
+
+/* Additional custom styles */
+.container {
+    max-width: 960px;
+}
+
+.card {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.btn {
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.text-center {
+    margin-bottom: 20px;
+}
+
+p.text-muted {
+    margin-top: 15px;
+    font-size: 0.875rem;
+}
+
+#loginError, #registerError, #createPostError, #editPostError {
+    display: none;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.page-link {
+    color: #007bff;
+}
+
+.page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
